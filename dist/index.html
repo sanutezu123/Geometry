@@ -6,16 +6,27 @@
   </head>
   <body>
     <h1>Geometry</h1>
-    <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
-      <div class="grid-item">9</div>
+    <div class="viewport-container">
+      <div class="input-panel">
+        <ul id="params-list">
+          <li>
+            <label for="viewport width">Viewport Width</label>
+            <input type="number" id="vp-width" value="" />
+          </li>
+          <li>
+            <label for="viewport height">Viewport Height</label>
+            <input type="number" id="vp-height" value="" />
+          </li>
+          <li>
+            <button id="setViewportParams">Set</button>
+          </li>
+        </ul>
+      </div>
+      <div id="vp"></div>
+      <div id="vector-ops">
+        Vector: <input type="text" placeholder="(x , y)" />
+        <button id="draw-vector">Create Vector</button>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

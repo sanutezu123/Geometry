@@ -11,6 +11,6 @@
   font-size: 30px;
   text-align: center;
 }
-body {
-  color: #000;
+ul#params-list li {
+  display: inline;
 }
